@@ -1,0 +1,76 @@
+
+Prueba 1 : 
+
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 1700 hz
+Resultado esperado: La señal pasa el filtro.
+
+
+
+Prueba 2 : 
+
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 250 hz
+Resultado esperado: La señal es bloqueada por el filtro.
+
+
+
+Prueba 3: 
+
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 900 hz
+Resultado esperado:La señal pasa el filtro.
+
+
+Prueba 4: 
+
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 800 hz
+Resultado esperado: La señal es bloqueada por el filtro
+
+
+Prueba 5: 
+
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 850 hz
+Resultado esperado:La señal pasa el filtro
+
+
+Prueba 6: 
+
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 842 hz
+Resultado esperado:La señal es bloqueada por el filtro
+
+
+Prueba 7: 
+frecuencia_señal: x
+MEDIA_DE_DISTRIBUCIÓN: 1000
+DESVIACIÓN: 300
+UMBRAL: 0.3
+x = 843 hz
+Resultado esperado:La señal pasa el filtro
+
+
+Pregunta: ¿Para qué valor de frecuencia la señal deja de ser bloqueada?
+
+Respuesta : Podemos notar que en las pruebas realizadas con valores menores que 843 hz (para el valor de la frecuencia_ señal) el programa nos arroja un mensaje que indica que la señal es bloqueada por el filtro. 
+Con esto podemos concluir que apartir del valor 243 hacia adelante la frecuencia deja de ser bloqueada 

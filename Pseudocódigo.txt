@@ -1,0 +1,44 @@
+program hallar_ algoritmo_ de_ filtrado_ de_ señales
+
+// Por medio de la función de densidad de probabilidad de la campana de Gauss hallar un algoritmo que simule el filtrado de señales 
+
+start 
+// Declaración de variables 
+	Declare  Constant MEDIA_DE_DISTRIBUCIÓN = 1000
+	Declare  Constant DESVIACIÓN = 300
+	Declare Constant Real UMBRAL = 0,3
+	Declare Constant Real PI = 3.14
+	Declare Real prob_acumulada 
+	Declare Integer frecuencia_señal, i
+	 
+	Display "ingrese un valor de frecuencia  no negativo"
+	input frecuencia_señal
+	Set prob_acumulada = 0
+	
+
+	For i = 0 to frecuencia_señal then 
+	   prob_acumulada = prob_acumulada + ( 1/(DESVIACIÓN * sqrt(2*PI)))*exponencial((-1/2)*((i-MEDIA_DE_DISTRIBUCIÓN)/(DESVIACIÓN))^2)
+	End For 
+
+	If  prob_acumulada > UMBRAL then 
+	   Display "La señal pasa el filtro"
+	Else
+	   Display "la señal es bloqueada por el filtro"
+stop 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+stop 

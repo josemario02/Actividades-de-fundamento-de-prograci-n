@@ -1,0 +1,40 @@
+ 
+Descripcion del Problema : Desarrollar un algoritmo que simule el filtrado utilizando la función de densidad de probabilidad de la campana de Gauss. 
+
+Entrada(s): 
+
+- X  : es la frecuencia_señal  (de tipo entero)
+
+Salida(s) : 
+
+- Mensaje indicando si la señal pasa o es bloqueada por el filtro.
+
+Otras varibles : 
+- 𝜇 (MEDIA_DE_DISTRIBUCIÓN) : 1000Hz (Constante)
+- 𝜎 ( desviación ): 300Hz (Constante)
+- Umbral : 0.3 (Constante)
+- prob_acumulada 
+- i : variable de iteración (tipo entero)
+
+
+
+PROCESO (S): 
+
+- Se debe solicitar el valor de la frecuencia (Mediante un input )
+- Este valor debe ser mayor que cero (debe ser mencionado mediante un display)
+- Con un ciclo se va a calcular la suma de las fdp de las frecuencias desde 0 hasta la frecuencia ingresada 
+- Cuando ya se tiene la suma de las frecuencias acumuladas, mediante un condicional, se verificara si esta es mayor que 30%.
+- De ser así se enviara un mensaje al usuario de que la señal pasa
+- Sino, se enviara un mensaje de que la señal esta siendo bloqueada por el filtro 
+
+
+Restricciones : 
+-  Se debe ingresar un valor de frecuencia  no negativo
+
+
+
+
+
+
+
+
